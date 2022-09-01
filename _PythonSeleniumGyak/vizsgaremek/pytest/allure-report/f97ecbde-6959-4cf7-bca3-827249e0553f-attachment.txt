@@ -1,2 +1,0 @@
-[['BMC', 'Basic Medicine Course'], ['BMC_III', 'Basic Medicine Course III'], ['Complex Rehab', 'Complex Rehabilitation MSc'], ['DENT', 'Dentistry (DMD)'], ['SBMC', 'January Basic Medicine Course'], ['GENMED', 'Medicine (MD)'], ['MOLBIO_MSc', 'Molecular Biology MSc'], ['PHARM', 'Pharmacy (PharmD)'], ['PhD', 'PhD'], ['PHYS_BSc', 'Physiotherapy BSc'], ['PEC', 'Preparatory English Course'], ['PH_BSc', 'Public Health BSc'], ['PH_MSc', 'Public Health MSc']]
-13
