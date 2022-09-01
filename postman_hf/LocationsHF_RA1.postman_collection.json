@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "08498c54-27dd-4b65-bd1d-b18e52fb649e",
+		"name": "LocationsHF_RA1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Az összes Location lekérdezése",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/locations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A Location-k közül egy lekérdezése id alapján",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/locations/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"locations",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A Location-k közül a 3. lap lekérdezése, ahol az oldalon három Location szerepel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/locations/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"locations",
+						"20"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,48 @@
+csegee@MacBook-Pro-M1 postman_hf % newman run "LocationsHF_RA4.postman_collection.json"
+newman
+
+LocationsHF_RA4
+
+→ Az összes Location lekérdezése
+  GET http://localhost:8080/api/locations [200 OK, 592B, 161ms]
+
+→ A Location-k közül egy lekérdezése id alapján
+  GET http://localhost:8080/api/locations/20 [200 OK, 320B, 40ms]
+
+→ A Location-k közül a 3. lap lekérdezése, ahol az oldalon három Location szerepel
+  GET http://localhost:8080/api/locations/20 [200 OK, 320B, 29ms]
+
+→ Egy Location sikeres létrehozása választott adatokkal
+  POST http://localhost:8080/api/locations [201 Created, 390B, 94ms]
+
+→ Egy Location sikertelen létrehozása
+  POST http://localhost:8080/api/locations [400 Bad Request, 523B, 15ms]
+
+→ Egy Location sikeres törlése
+  DELETE http://localhost:8080/api/locations [204 No Content, 201B, 204ms]
+
+→ Egy Location sikertelen törlése
+  DELETE http://localhost:8080/api/locations/100 [400 Bad Request, 317B, 18ms]
+
+→ Egy Location sikertelen törlése ENV
+  DELETE http://localhost:8080/api/locations/{{location_id}} [400 Bad Request, 374B, 26ms]
+
+┌─────────────────────────┬───────────────────┬───────────────────┐
+│                         │          executed │            failed │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│              iterations │                 1 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│                requests │                 8 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│            test-scripts │                 0 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│      prerequest-scripts │                 0 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│              assertions │                 0 │                 0 │
+├─────────────────────────┴───────────────────┴───────────────────┤
+│ total run duration: 667ms                                       │
+├─────────────────────────────────────────────────────────────────┤
+│ total data received: 1.11kB (approx)                            │
+├─────────────────────────────────────────────────────────────────┤
+│ average response time: 73ms [min: 15ms, max: 204ms, s.d.: 67ms] │
+└─────────────────────────────────────────────────────────────────┘

@@ -1,0 +1,10 @@
+csegee@MacBook-Pro-M1 ~ % selenium-side-runner /Users/csegee/PycharmProjects/csizmadia_gergely/selenium-ide-hf/SI4_test_suites.side
+info:    Running /Users/csegee/PycharmProjects/csizmadia_gergely/selenium-ide-hf/SI4_test_suites.side
+ PASS  ./Delete_Location.test.js
+ PASS  ./Create_Location.test.js (5.375s)
+
+Test Suites: 2 passed, 2 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        5.645s
+Ran all test suites.
